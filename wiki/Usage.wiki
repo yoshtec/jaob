@@ -78,7 +78,10 @@ Marshalling can be done through the marshaller:
 
 <code language="java">
 Marshaller marshaller = new Marshaller();
-marshaller.marshal( objectscollection , URI.create("MyOntology.owl"), (new File("MyOntology.owl")).toURI());
+marshaller.marshal(
+	objectscollection ,
+	URI.create("MyOntology.owl"),
+	(new File("MyOntology.owl")).toURI());
 </code>
 
 Unmarshalling works the other way around:
@@ -90,8 +93,7 @@ UnMarshaller unmarshaller = new UnMarshaller();
 un.registerClass(MatryoshkaImpl.class);
 
 Collection<Object> objects = unmarshaller.unmarshal( 
-	objectscollection, 
-	URI.create("MyOntology.owl"), 
+        URI.create("MyOntology.owl"), 
 	(new File("MyOntology.owl")).toURI());
 
 </code>
