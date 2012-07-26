@@ -89,7 +89,11 @@ UnMarshaller unmarshaller = new UnMarshaller();
 // need to register the classes that shall be instantiated before:
 un.registerClass(MatryoshkaImpl.class);
 
-Collection<Object> objects = unmarshaller.unmarshal(  , URI.create("MyOntology.owl"), (new File("MyOntology.owl")).toURI());
+Collection<Object> objects = unmarshaller.unmarshal( 
+	objectscollection, 
+	URI.create("MyOntology.owl"), 
+	(new File("MyOntology.owl")).toURI());
+
 </code>
 
 The registering of classes has the advantage, that you can create a complex Ontology, then run the code generator get a bunch of classes out of it, and then you could create a subclass of an generated class which then shall be instantiated instead of the original generated code (this could not be done with jaxb for instance). All you have to do for it is {{{implement}}} an Interface that is annotated with the {{{@OwlClass}}} annotation or subclass a class with this annotation.
