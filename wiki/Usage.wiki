@@ -2,6 +2,9 @@
 
 As JAOB is inspired mainly by JAXB it uses Annotations to map Java objects to OWL Individuals.
 
+<wiki:toc max_depth="2" />
+
+
 = Annotate Java Beans =
 
 == Classes ==
