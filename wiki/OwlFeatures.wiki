@@ -1,3 +1,5 @@
+#summary Owl Concepts that the lib handles
+
 == OWL Concepts understood by JAOB ==
  * Classes
   * owl:Thing
