@@ -1,0 +1,8 @@
+#summary Dependencies
+
+= Dependencies =
+
+ * Java 6 (or I guess it could be run using Java 1.5 plus JAXB)
+ * [http://owlapi.sourceforge.net/ OWL-API] for reading and writing ontologies.
+ * [http://www.slf4j.org/ slf4j] Java Simple Logging Facade and an implementation thereof. I use [http://logback.qos.ch/ logback], but log4j could be used as well.
+ * [http://codemodel.java.net/ CodeModel] for generating Java code from ontologies, it is not necessary for marshalling and unmarshalling.
