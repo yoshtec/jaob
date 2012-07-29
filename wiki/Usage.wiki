@@ -1,4 +1,4 @@
-#summary how the lib can be used
+#summary Usage Instructions with Java Code Examples
 
 As JAOB is inspired mainly by JAXB it uses Annotations to map Java objects to OWL Individuals.
 
